@@ -1,0 +1,8 @@
+Los ejercicios de w3 School están muy chulos:
+https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html2
+
+Backtick quotes: Comillas invertidas para llamar variables u operaciones en strings:
+ console.log(`Test Exitoso! ${1+2}`);
+
+Expressions in Strings
+ const output = `I like the song ${song}. I gave it a score of ${score/highestScore * 100}%.`;

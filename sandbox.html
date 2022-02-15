@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="/ico.png"/>
+  <title>The Odin Project Sandbox</title>
+</head>
+<body>
+
+<!--<button>Press me</button>
+
+<script>
+const button = document.querySelector('button');
+
+function greet() {
+  const name = prompt('What is your name?');
+  alert(`Hello ${name}, nice to see you!`);
+}
+
+button.addEventListener('click', greet);
+
+  
+</script>
+-->
+
+ <!--
+ <button>Start machine</button>
+  <p>The machine is stopped.</p>
+  <script>
+    const btn = document.querySelector('button');
+const txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+  if (btn.textContent === 'Start machine') {
+    btn.textContent = 'Stop machine';
+    txt.textContent = 'The machine has started!';
+  } else {
+    btn.textContent = 'Start machine';
+    txt.textContent = 'The machine is stopped.';
+  }
+}
+
+  </script>
+-->
+
+
+
+
+  <script>
+    // Your JavaScript goes here!
+
+    let text = "5";
+let paddedStart = text.padStart(4,0); 
+let paddedEnd = text.padEnd(4,0); 
+    console.log(paddedEnd)
+    console.log(paddedStart)
+
+
+let potat = "Potatoes"
+    let potatLength = potat.length;
+    console.log(potatLength);
+
+function test (y,z){
+  let a=0;
+  let b=0;
+  b=a+y+z;
+  b++;
+  b--;
+  console.log("El valor de 'b' es: " + b);
+}
+test(1,-1)
+
+  console.log(`Test de comillas Exitoso! I like ${potat}`);
+
+let isGreater = potatLength < 10;
+  console.log(typeof isGreater, isGreater, potatLength);
+
+  </script>
+
+<!-- String Testing -->
+<input id="textBox" type="text"></input>
+<div id="output"></div>
+
+
+
+<script>
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+
+
+textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
+
+
+    
+</script>
+<script>
+  function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+  }
+
+  function showOk() {
+    alert("You agreed.");
+  }
+
+  function showCancel() {
+    alert("You canceled the execution.");
+  }
+
+  // usage: functions showOk, showCancel are passed as arguments to ask
+  ask("Do you agree?", showOk, showCancel);
+</script>
+
+</body>
+</html>
