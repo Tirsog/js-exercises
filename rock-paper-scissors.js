@@ -1,36 +1,36 @@
 let computerWins = 0;
 let playerWins = 0;
 let draws = 0;
-let computerSelection = "";
-let playerSelection = "";
 
-
-//Defino arriba variables vacias (y globales) ¿Es correcto?
+// Jugada del ordenador.
 
 function computerPlay() {
 
     let random = Math.floor(Math.random() * 3);
     switch (random) {
         case 0:
-            computerSelection = "rock";
+            return "rock";
             break;
         case 1:
-            computerSelection = "paper";
+            return "paper";
             break;
         case 2:
-            computerSelection = "scissors";
+            return "scissors";
             break;
     }
+
 }
+
+// Escoge el jugador.
 
 function playerPlay() {
     let playerSelectionInput = window.prompt("Player, choose:", "Rock, paper or scissors")
-    playerSelection = playerSelectionInput.toLowerCase();
+    return playerSelectionInput.toLowerCase();
 }
 
 function playRound() {
-    playerPlay();
-    computerPlay();
+    let playerSelection = playerPlay();
+    let computerSelection = computerPlay();
     if (playerSelection === computerSelection) {
         draws++;
         console.log("Empate")
@@ -56,7 +56,7 @@ function playRound() {
 }
 
 function game() {
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 5; i++) {
         playRound();
     }
     console.log("Computer:" + computerWins)
